@@ -34,13 +34,14 @@
 	});
 
 	//slider
-	$('.testimonial-slider').slick({
-
-		dots: true,
-		arrows: false,
-		slide: '.testimonial-slide',
-		autoplay: true,
-		autoplaySpeed: 5000
+	$('.testimonial-slider').each(function(){
+		$(this).slick({
+			dots: $(this).attr('data-dots'),
+			arrows: false,
+			slide: '.testimonial-slide',
+			autoplay: $(this).attr('data-autoplay'),
+			autoplaySpeed: $(this).attr('data-speed')
+		});
 	});
 
 	//parallax stuff

@@ -34,13 +34,14 @@
 	});
 
 	//slider
-	$('.testimonial-slider').slick({
-
-		dots: true,
-		arrows: false,
-		slide: '.testimonial-slide',
-		autoplay: true,
-		autoplaySpeed: 5000
+	$('.testimonial-slider').each(function(){
+		$(this).slick({
+			dots: $(this).attr('data-dots'),
+			arrows: false,
+			slide: '.testimonial-slide',
+			autoplay: $(this).attr('data-autoplay'),
+			autoplaySpeed: $(this).attr('data-speed')
+		});
 	});
 
 	//parallax stuff
@@ -74,7 +75,7 @@
 	//if there's a parallax item
 	if(parallax.length){
 		//set masthead bg for non-parallax (mobile)
-		//$('.parallax-container').css({'background-image': 'url(' + parallax.attr('src') + ')'});
+		$('.parallax-container').css({'background-image': 'url(' + parallax.attr('src') + ')'});
 
 		//if parallax bg not hidden(mobile), do parallax
 		if(parallax.css('display') != 'none'){
