@@ -1,0 +1,42 @@
+.page-content {
+	position: relative;
+	padding: $gutter;
+	margin-top: -75px;
+	margin-bottom: $gutter;
+	background: $white;
+	box-shadow: $light-shadow;
+	z-index: 5;
+}
+
+@media(max-width: 950px) {
+	.page-content {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+//sidebar
+.sidebar-contact {
+	margin: $gutter;
+	padding: $gutter;
+	background: $white;
+	box-shadow: $light-shadow;
+
+	header {
+		background: $primary-color;
+		padding: 15px 0;
+		margin: 0 0 12px 0;
+
+		h3 {
+			color: $white;
+			margin: 0;
+		}
+	}
+}
+
+@media(max-width: 950px){
+	.sidebar-contact {
+		padding: $gutter;
+		margin: $gutter 0;
+	}
+}

@@ -1,0 +1,163 @@
+//
+.intro {
+	padding: $section-padding 0;
+}
+
+@media(max-width: $phone){
+	.intro {
+		padding: 0;
+	}
+}
+
+
+.intro-body {
+	min-height: 300px;
+	padding: 0 $gutter;
+
+	h3 {
+		font-style: italic;
+		font-weight: $fw-extra-light;
+		margin-bottom: 10px;
+		margin-top: 0;
+		font-size: 18px;
+	}
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 35px;
+		font-weight: $fw-extra-light;
+		font-size: 32px;
+	}
+}
+
+@media(max-width: 950px){
+	.intro-body {
+		min-height: 0;
+		padding: $gutter;
+	}
+}
+
+.intro-image-container {
+	min-height: 300px;
+}
+
+@media(max-width: 950px){
+	.intro-image-container {
+		display: none;
+	}
+}
+
+//
+.icons {
+	padding: $section-padding 0;
+	background: $dark-gray;
+	color: $white;
+
+	.icon-container {
+		padding: $gutter;
+
+		.fa {
+			font-size: 4em;
+		}
+
+		h3 {
+			margin-top: 25px;
+			margin-bottom: 0;
+			font-size: 24px;
+			font-weight: $fw-extra-light;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+	}
+}
+
+//slider
+.slider-container {
+	min-height: 282px;
+	padding-top: $gutter;
+	margin-left: $gutter / 2;
+	box-sizing: border-box;
+
+	h2 {
+		margin: 0;
+	}
+}
+
+@media(max-width: $desktop) {
+	.slider-container {
+		margin-left: $gutter;
+		margin-right: $gutter;
+	}
+}
+
+.testimonial-image-container {
+	margin-right: $gutter / 2;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: $desktop) {
+	.testimonial-image-container {
+		margin-right: 0;
+		margin-bottom: $gutter;
+	}
+}
+
+.testimonials {
+	padding: $section-padding 0;
+	overflow: hidden;
+
+	h2 {
+		margin-bottom: 0;
+		font-size: 28px;
+		font-weight: $fw-extra-light;
+	}
+
+	.testimonial-slider {
+		//padding: $gutter;
+		padding: 0 $gutter $gutter $gutter;
+
+		.testimonial-slide {
+
+			h3 {
+				font-weight: 400;
+				font-size: 24px;
+				color: $primary-color;
+				margin: 10px 0;
+			}
+
+			blockquote {
+				font-style: italic;
+				font-weight: 300;
+				margin: 15px 0;
+			}
+		}
+	}
+}
+
+
+.explore-services {
+	padding: $section-padding 0;
+	background: url('../img/mop.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: " ";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.55;
+		z-index: -1;
+	}
+}

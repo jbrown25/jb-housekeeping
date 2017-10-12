@@ -1,0 +1,52 @@
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	font-family: $body-fontfamily;
+	color: $light-black;
+	background: $offwhite;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $heading-fontfamily;
+}
+
+h1 {
+	font-size: $h1-fontsize;
+}
+
+h2 {
+	font-size: $h2-fontsize;
+}
+
+h3 {
+	font-size: $h3-fontsize;
+}
+
+p {
+	font-weight: $fw-light;
+	font-size: $body-copy-fontsize;
+	line-height: 26px;
+}
+
+a {
+	color: $secondary-color;
+	text-decoration: none;
+
+	&:visited {
+		color: $secondary-color;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+input,
+textarea {
+	font-family: $body-fontfamily;
+}

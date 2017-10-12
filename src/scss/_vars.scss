@@ -1,0 +1,49 @@
+//dimensions
+$desktop: 960px;
+//$masthead-height: 500px;
+$masthead-height: 600px;
+$masthead-short-height: 350px;
+$gutter: 20px;
+
+//margins/padding
+$section-padding: 50px;
+
+//breakpoints
+$tablet: 875px;
+$phone: 640px;
+
+//color
+//$masthead-heading-bg: rgba(255, 255, 255, 0.75);
+$masthead-heading-bg: rgba(255, 255, 255, 0.9);
+$white: #ffffff;
+$offwhite: #f7f7f7;
+$black: #000000;
+$light-gray: #E6E6E6;
+$gray: #D2D2D2;
+//$dark-gray: #2F2F2F;
+$dark-gray: #121C25;
+$light-black: #666666;
+
+$primary-color: #13314D;
+$secondary-color: #2D587B;
+
+
+//font sizes
+$h1-fontsize: 36px;
+$h2-fontsize: 24px;
+$h3-fontsize: 18px;
+
+$body-copy-fontsize: 15px;
+
+//font-weights
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 600;
+$fw-extra-bold: 700;
+
+$heading-fontfamily: 'Raleway', sans-serif;
+$body-fontfamily: 'Merriweather', serif;
+
+//shadows
+$light-shadow: 0px 2px 1px 0px rgba(0,0,0,0.25);

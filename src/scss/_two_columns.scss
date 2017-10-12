@@ -1,0 +1,69 @@
+//styles for two column layout
+
+.intro-container {
+	padding: $gutter $gutter 0 $gutter;
+}
+
+.two-column-content {
+	padding-bottom: $section-padding;
+
+	.row {
+		.col-md-one-half:nth-child(1){
+			padding-right: $gutter / 2;
+		}
+
+		.col-md-one-half:nth-child(2){
+			padding-left: $gutter / 2;
+		}
+	}
+}
+
+@media(max-width: $tablet){
+	.two-column-content {
+		padding-bottom: 0;
+
+		.row {
+			.col-md-one-half:nth-child(1),
+			.col-md-one-half:nth-child(2) {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.first-column-content {
+	padding: 0 0 $gutter $gutter;
+}
+
+.second-column-content {
+	padding: $gutter;
+	background: $white;
+}
+
+@media(max-width: $tablet) {
+	.first-column-content,
+	.second-column-content {
+		padding: $gutter;
+	}
+}
+
+//contact page specific
+.map-container {
+	margin-bottom: 12px;
+}
+
+.contact-info-container {
+	.address,
+	.phone,
+	.email {
+		position: relative;
+		display: block;
+		margin-left: 30px;
+
+		.fa {
+			position: absolute;
+			top: 0;
+			left: -30px;
+		}
+	}	
+}

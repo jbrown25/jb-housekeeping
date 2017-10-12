@@ -1,0 +1,151 @@
+//scaffolding
+.container {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	max-width: $desktop;
+	padding: 0 10px;
+}
+
+.row {
+	position: relative;
+	margin: 0 -10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container::before,
+.row::after {
+	display: table;
+	content: " ";
+}
+
+.container::after,
+.row::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+//columns
+
+.column {
+	display: block;
+	float: left;
+ 	position: relative;
+ 	box-sizing: border-box;
+ 	min-height: 1px;
+}
+
+@media(max-width: $phone){
+	.column {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+.col-one {
+	@extend .column;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.col-one-half {
+	@extend .column;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.col-one-third {
+	@extend .column;
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
+
+.col-two-thirds {
+	@extend .column;
+	flex: 0 0 66.66666%;
+	max-width: 66.66666%;
+}
+
+.col-one-fourth {
+	@extend .column;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.col-three-fourths {
+	@extend .column;
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+
+//lg columns
+.col-lg-one-half {
+	@extend .col-one-half;
+}
+
+.col-lg-one-third {
+	@extend .col-one-third;
+}
+
+.col-lg-two-thirds {
+	@extend .col-two-thirds;
+}
+
+@media(max-width: $desktop){
+	[class^="col-lg"] {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+//md columns
+.col-md-one-half {
+	@extend .col-one-half;
+}
+
+.col-md-one-third {
+	@extend .col-one-third;
+}
+
+.col-md-two-thirds {
+	@extend .col-two-thirds;
+}
+
+.col-md-one-fourth {
+	@extend .col-one-fourth;
+}
+
+@media(max-width: $tablet){
+	[class^="col-md"]{
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+//offsets 
+
+.offset-one-fourth {
+	margin-left: 25%;
+}
+
+@media(max-width: $phone){
+	.offset-one-fourth {
+		margin-left: 0;
+	}
+}
+
+.md-offset-one-half {
+	margin-left: 50%;
+}
+
+@media(max-width: $tablet) {
+	.md-offset-one-half {
+		margin-left: 0;
+	}
+}
+

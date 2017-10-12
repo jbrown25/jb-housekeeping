@@ -1,0 +1,36 @@
+.button {
+	position: relative;
+	display: inline-block;
+	color: $white;
+	padding: 12px 20px;
+	background: $primary-color;
+	border: none;
+	margin: 0;
+	text-decoration: none;
+	transition: background .25s ease;
+
+	&:hover {
+		background: $secondary-color;
+		color: $white;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: $white;
+	}
+}
+
+.button.block {
+	display: block;
+	padding: 12px 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+button.button.block {
+	width: 100%;
+}
+
+.button.large-button {
+	padding: 18px 30px;
+}
