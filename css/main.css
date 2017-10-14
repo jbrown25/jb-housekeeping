@@ -982,7 +982,8 @@ button.button.block {
   opacity: 0.55; }
 
 .panel-row-style {
-  position: relative; }
+  position: relative;
+  min-width: 0; }
 
 @media (max-width: 875px) {
   .cta-button-container,
@@ -1002,6 +1003,23 @@ button.button.block {
     position: absolute;
     top: 0;
     left: -30px; }
+
+.slider-container {
+  position: relative; }
+
+.testimonial-slider {
+  padding: 0 20px 20px 20px;
+  max-width: 100%;
+  overflow: hidden; }
+  .testimonial-slider .testimonial-slide h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #13314D;
+    margin: 10px 0; }
+  .testimonial-slider .testimonial-slide blockquote {
+    font-style: italic;
+    font-weight: 300;
+    margin: 15px 0; }
 
 .flex-center {
   display: -webkit-box;

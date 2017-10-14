@@ -24,6 +24,7 @@
 
 .panel-row-style {
 	position: relative;
+	min-width: 0;
 }
 
 @media(max-width: $tablet) {
@@ -46,5 +47,34 @@
 		position: absolute;
 		top: 0;
 		left: -30px;
+	}
+}
+
+//testimonials
+
+.slider-container {
+	position: relative;
+}
+
+.testimonial-slider {
+	//padding: $gutter;
+	padding: 0 $gutter $gutter $gutter;
+	max-width: 100%;
+	overflow: hidden;
+
+	.testimonial-slide {
+
+		h3 {
+			font-weight: 400;
+			font-size: 24px;
+			color: $primary-color;
+			margin: 10px 0;
+		}
+
+		blockquote {
+			font-style: italic;
+			font-weight: 300;
+			margin: 15px 0;
+		}
 	}
 }

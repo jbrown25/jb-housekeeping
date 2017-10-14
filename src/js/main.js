@@ -34,7 +34,7 @@
 	});
 
 	//slider
-	$('.testimonial-slider').each(function(){
+	/*$('.testimonial-slider').each(function(){
 		$(this).slick({
 			dots: $(this).attr('data-dots'),
 			arrows: false,
@@ -43,6 +43,13 @@
 			autoplaySpeed: $(this).attr('data-speed')
 		});
 	});
+	$('.testimonial-slider').slick({
+		dots: true,
+		arrows: false,
+		slide: '.testimonial-slide',
+		autoplay: true,
+		autoplaySpeed: 1000
+	});*/
 
 	//parallax stuff
 
